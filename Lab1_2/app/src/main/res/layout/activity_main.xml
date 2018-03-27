@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    //Use LinearLayout vertical
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        //set length of layout
+        <EditText
+            android:id="@+id/edit"
+            android:hint="type your name" />
+        // set hint and define id
+        // and Edit box is set in the TableLayout
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="66dp">
+        //set size of Relative Layout
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onButton1Clicked"
+            android:text="CLEAR" />
+        //Set layout and define the ButtonClicked method
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn1"
+            android:onClick="onButton2Clicked"
+            android:text="PRINT" />
+        //Set layout and define the ButtonClicked method
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

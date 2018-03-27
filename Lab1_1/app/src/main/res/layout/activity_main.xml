@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    //Linerar Layout is main Layout
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE IMAGE"
+        android:onClick="onButton1Clicked"/>
+    //set gravity to center, to position in center
+    // set id and onClick function to hnadle click method
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img1"/>
+        //Image1(before button clicked)
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img2" />
+        //Image2(After button clicked)
+    </FrameLayout>
+    //To handle impageView, FrameLayout is useful.
+    //Insert two ImageView in FrameLayout
+
+
+</LinearLayout>
