@@ -10,13 +10,25 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,5"
+        >>
         //set length of layout
-        <EditText
-            android:id="@+id/edit"
-            android:hint="type your name" />
-        // set hint and define id
-        // and Edit box is set in the TableLayout
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"/>
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:hint="type your name" />
+            // set hint and define id
+            // and Edit box is set in the TableLayout
+        </TableRow>
+        //By using tableRow, arrange the two texts
+
     </TableLayout>
 
     <RelativeLayout
